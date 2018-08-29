@@ -17,13 +17,13 @@ def main():
         judgeNum = sense.judge()
         if judgeNum == 1:
             if GPIO.input(auto_driving_switch)==1:
-                clutchA++ 
+                clutchA += 1
                 #sense.ClutchAlarm()
             elif GPIO.input(new_tech_switch)==1:
-                newT++
+                newT += 1
                 #crush.new_tech()
             else :
-                allN++
+                allN += 1
                 #sense.AllNormal()
             if clutch > 10:
                 isClutchA = 1
