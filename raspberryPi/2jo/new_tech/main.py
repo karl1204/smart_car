@@ -25,13 +25,13 @@ def main():
             else :
                 allN += 1
                 #sense.AllNormal()
-            if clutch > 10:
+            if clutch > 5:
                 isClutchA = 1
                 clutchA = newT = allN = isNewT = isAllN = 0
-            elif newT > 10:
+            elif newT > 5:
                 isNewT = 1
                 clutchA = newT = allN = isClutchA = isAllN = 0
-            elif allN > 10:
+            elif allN > 5:
                 isAllN = 1
                 clutchA = newT = allN = isClutchA = isNewT = 0
             else:
